@@ -17,7 +17,7 @@ Requires:       puppet >= 2.7.0
 This modules allows you to configure sysctl.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
