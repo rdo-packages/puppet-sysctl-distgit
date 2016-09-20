@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 Name:           puppet-sysctl
-Version:        
+Version:        v0.0.11
 Release:        1%{?alphatag}%{?dist}
 Summary:        This modules allows you to configure sysctl.
 License:        GPL-2.0
