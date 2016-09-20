@@ -1,7 +1,7 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 Name:           puppet-sysctl
-Version:        XXX
-Release:        XXX
+Version:        
+Release:        1%{?alphatag}%{?dist}
 Summary:        This modules allows you to configure sysctl.
 License:        GPL-2.0
 
@@ -41,4 +41,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/sysctl/
 
 
 %changelog
+* Fri Sep 16 2016 Haikel Guemar <hguemar@fedoraproject.org> -1.65ffe83.git
+- Newton update  (65ffe839a4ce785bc3901452488197a0ef158cd8)
 
