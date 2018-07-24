@@ -50,3 +50,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/sysctl/
 %changelog
 
 
+# REMOVEME: error caused by commit https://github.com/duritong/puppet-sysctl/commit/84bf1fc3a8de8672e74abb30e20721929d34aaf2
