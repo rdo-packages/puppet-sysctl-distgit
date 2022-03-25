@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-sysctl
-%global commit 65ffe839a4ce785bc3901452488197a0ef158cd8
+%global commit 847ec1c07ed3e231a48d8816971c0bd4afe7a72b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-sysctl
-Version:        XXX
-Release:        XXX
+Version:        0.0.12
+Release:        2%{?alphatag}%{?dist}
 Summary:        This modules allows you to configure sysctl.
 License:        GPL-2.0
 
@@ -48,5 +48,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/sysctl/
 
 
 %changelog
+* Fri Mar 25 2022 RDO <dev@lists.rdoproject.org> 0.0.12-2.847ec1cgit
+- Update to post 0.0.12 (847ec1c07ed3e231a48d8816971c0bd4afe7a72b)
+
 
 
